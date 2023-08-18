@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: url(./assets/img/sneakercommunity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#bg-video{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    width: 350px;
+    height: 400px;
+    background-color: #505050bd;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    backdrop-filter: blur(3px);
+    position: relative;
+    overflow: hidden;
+    
+}
+.container .gplr{
+    padding: 15px;
+    width: calc(100% - 30px);
+    width: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+}
+
+.container .reg{
+    top: 100%;
+}
+
+.container .login{
+    top: 0;
+}
+
+.container .showreg{
+    top: 0;
+}
+
+.container .hidelog{
+    top: -100%;
+}
+
+
+
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+header{
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.input-field .input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+.input-field i{
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: #fff;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    width: 100%;
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    transition: .3s;
+    cursor: pointer;
+}
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0,0,0, 0.2);
+}
+.two-col{
+    height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+.one{
+    display: flex;
+}
+label a{
+    text-decoration: none;
+    color: #fff;
+}

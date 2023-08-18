@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="box">
+
+        <video src="./images/video.mp4" id="bg-video" loop muted autoplay></video>
+
+        <div class="container">
+            <div class="gplr login ">
+                <h3 style="text-align: center; font-size: 2em; font-family: sans-serif; color: #ff4a17;">FashionGit</h3>
+                <div class="top">
+                    <header>Login</header>
+                </div>
+    
+                <div class="input-field">
+                    <input type="text" class="input" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="input-field">
+                    <a href="./fashiongit.html"><input type="submit" class="submit" value="Login"></a>
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="check">
+                        <label for="check">Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label for="#"><a href="#">Forgot Password</a></label>
+                    </div>
+    
+                </div>
+                <a href="#" style="text-decoration: none;" onclick="toreg()"><span class="toreg">Have an acount?</span></a>
+            </div>
+            
+
+            <div class="gplr reg ">
+                <h3 style="text-align: center; font-size: 2em; font-family: sans-serif; color: #ff4a17;">FashionGit</h3>
+
+                <div class="top">
+                    
+                    <header>Registration</header>
+                </div>
+    
+                <div class="input-field">
+                    <input type="text" class="input" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input" placeholder="Confirm Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="input-field">
+                    <a href="#"><input type="submit" class="submit" value="Register" onclick="tolog()"></a>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    const log_form = document.querySelector(".login"),
+            reg_form = document.querySelector(".reg")
+
+    function toreg(){
+        log_form.classList.add("hidelog");
+        reg_form.classList.add("showreg");
+        
+    }
+
+    function tolog(){
+        log_form.classList.remove("hidelog");
+        reg_form.classList.remove("showreg");
+        
+    }
+
+</script>
+</html>
